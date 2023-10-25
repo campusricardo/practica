@@ -185,3 +185,42 @@ const greet = (user: objWithName) => {
 
 };
 */
+/*
+// let greet: Function;
+
+// example 1
+// a and b only means that we need to parameters
+let gree: (a: string, b: string) => void;
+gree = (name: string, greeting: string): void => {
+    console.log(`${name} says ${greeting}`);
+    
+}
+// example 2
+
+let calc: (a: number, b: number, c: string) => number;
+
+calc = (numOne: number, numTwo: number, action: string) => {
+
+    if (action === 'add') {
+        return numOne + numTwo;
+    } else {
+        console.log(typeof NaN);
+        
+        return numOne - numTwo;
+    }
+
+};
+// example 3
+type person = {name: string, age: number};
+
+let logDetails: (obj: person) => void;
+
+
+logDetails = (ninja: person) => {
+    console.log(`${ninja.name} is ${ninja.age}years old`);
+    
+};
+
+console.log(logDetails({name: 'juan', age: 20}));
+
+*/ 
