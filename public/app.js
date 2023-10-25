@@ -1,5 +1,21 @@
 // classes
 import { Invoice } from "./classes/invoice.js";
+;
+const me = {
+    name: 'Ricardo Franco',
+    age: 17,
+    speak(text) {
+        console.log(text);
+    },
+    spend(amount) {
+        console.log(`I spend ${amount}`);
+        return amount;
+    }
+};
+const greetPerson = (person) => {
+    console.log(`Hello ${person.name}`);
+};
+greetPerson(me);
 const invOne = new Invoice('Ricardo', 'Work in BAM', 250);
 const invTwo = new Invoice('Luigi', 'Works as a plumber', 300);
 console.log(invOne);
