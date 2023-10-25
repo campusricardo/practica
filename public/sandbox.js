@@ -146,17 +146,42 @@ ninja = { name: 'xd', age: true};
 console.log(ninja);
 
 */
-let greet;
+/*
+let greet: Function;
+
 greet = () => {
     console.log('hello world');
+    
 };
-const add = (a, b, c = 10) => {
-    console.log(a + b);
+
+const add = (a: number, b: number, c: number | string = 10): void => {
+    console.log( a + b);
     console.log(c);
+    
+    
 };
-add(5, 2, 20);
-const minus = (a, b) => {
+
+add(5,2, 20);
+
+const minus =  (a: number, b: number): number => {
     return a - b;
 };
-let result = minus(10, 7);
+
+let result = minus(10,7);
 console.log(result);
+*/
+/*
+type StringOrNum = string | number;
+type objWithName = { name: string, uid: StringOrNum};
+const logDetails = (uid: StringOrNum, item: string) => {
+    console.log(` ${item} has a uid of ${uid}`);
+    
+};
+
+const greet = (user: objWithName) => {
+
+    console.log(` ${user.name} says hello`);
+    
+
+};
+*/
